@@ -107,7 +107,7 @@ lib.ssMetadata = [
 (lib.CachedBmp_1 = function() {
 	this.initialize(img.CachedBmp_1);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,3822,3923);
+p.nominalBounds = new cjs.Rectangle(0,0,3822,3448);
 
 
 (lib._1 = function() {
@@ -489,29 +489,25 @@ if (reversed == null) { reversed = false; }
 
 	// Button
 	this.instance = new lib.Back("synched",0);
-	this.instance.setTransform(0,1961.45);
+	this.instance.setTransform(0,1761);
 	var instanceFilter_1 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,127.5,0);
 	this.instance.filters = [instanceFilter_1];
 	this.instance.cache(-2,-2,304,163);
 
 	this.instance_1 = new lib.Next("synched",0);
-	this.instance_1.setTransform(933,2040.95,1,1,0,0,0,150,79.5);
+	this.instance_1.setTransform(932.5,1840.5,1,1,0,0,0,150,79.5);
 	var instance_1Filter_2 = new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,127.5,0);
 	this.instance_1.filters = [instance_1Filter_2];
 	this.instance_1.cache(-2,-2,304,163);
 
 	this.Main = new lib.Main();
 	this.Main.name = "Main";
-	this.Main.setTransform(542,2040.95,1,1,0,0,0,150,79.5);
+	this.Main.setTransform(541.25,1840.5,1,1,0,0,0,150,79.5);
 	new cjs.ButtonHelper(this.Main, 0, 1, 1);
-
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#323232").s().p("EhUkASkMAAAglHMCpJAAAMAAAAlHg");
-	this.shape.setTransform(541.25,2041.225);
 
 	this.Next = new lib.Next();
 	this.Next.name = "Next";
-	this.Next.setTransform(933,2040.95,1,1,0,0,0,150,79.5);
+	this.Next.setTransform(930,1840.5,1,1,0,0,0,150,79.5);
 	var NextFilter_3 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.Next.filters = [NextFilter_3];
 	this.Next.cache(-2,-2,304,163);
@@ -519,13 +515,13 @@ if (reversed == null) { reversed = false; }
 
 	this.Back = new lib.Back();
 	this.Back.name = "Back";
-	this.Back.setTransform(0,1961.45);
+	this.Back.setTransform(0,1761);
 	var BackFilter_4 = new cjs.ColorFilter(1,1,1,1,0,0,0,0);
 	this.Back.filters = [BackFilter_4];
 	this.Back.cache(-2,-2,304,163);
 	new cjs.ButtonHelper(this.Back, 0, 1, 1);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape},{t:this.Main},{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"independent",startPosition:undefined}},{t:this.instance}]},1).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"synched",startPosition:0}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"synched",startPosition:0}}]},1).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.shape},{t:this.Main},{t:this.Next,p:{mode:"synched",startPosition:0}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).wait(1));
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.Main,p:{x:541.25}},{t:this.instance_1},{t:this.instance}]}).to({state:[{t:this.Main,p:{x:540}},{t:this.Next,p:{x:930,mode:"independent",startPosition:undefined}},{t:this.instance}]},1).to({state:[{t:this.Main,p:{x:540}},{t:this.Next,p:{x:930,mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.Main,p:{x:541.5}},{t:this.Next,p:{x:933,mode:"synched",startPosition:0}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.Main,p:{x:541.5}},{t:this.Next,p:{x:933,mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"synched",startPosition:0}}]},1).to({state:[{t:this.Main,p:{x:541.5}},{t:this.Next,p:{x:933,mode:"independent",startPosition:undefined}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).to({state:[{t:this.Main,p:{x:541.5}},{t:this.Next,p:{x:933,mode:"synched",startPosition:0}},{t:this.Back,p:{mode:"independent",startPosition:undefined}}]},1).wait(1));
 	this.timeline.addTween(cjs.Tween.get(instanceFilter_1).wait(6));
 	this.timeline.addTween(cjs.Tween.get(instance_1Filter_2).wait(6));
 	this.timeline.addTween(cjs.Tween.get(NextFilter_3).wait(2).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 0).wait(1).to(new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,127.5,0), 0).wait(1).to(new cjs.ColorFilter(1,1,1,1,0,0,0,0), 0).wait(2).to(new cjs.ColorFilter(0.5,0.5,0.5,1,127.5,127.5,127.5,0), 0).wait(1));
@@ -593,12 +589,12 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(539.5,1080,1371,1080);
+p.nominalBounds = new cjs.Rectangle(539.5,960,1371,960.5);
 // library properties:
 lib.properties = {
 	id: '5E4291028AE1684895624347F0A9E8A0',
 	width: 1080,
-	height: 2160,
+	height: 1920,
 	fps: 24,
 	color: "#FFFFFF",
 	opacity: 1.00,
